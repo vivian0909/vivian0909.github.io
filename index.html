@@ -141,12 +141,12 @@
                 <div class="row">
                     <div class="main_home">
                         <div class="home_text">
-                            <h1 class="text-white">
+                            <h2 class="text-white">
                                 360°人才寻访体系
                                 <br/> 精准把握客户需求，5日内快速响应	
                                 <br/> 北京+上海双中心猎头
                                 <br/>
-                            </h1>
+                            </h2>
                         </div>
                     </div>
                 </div>
@@ -246,7 +246,7 @@
         </section>
         <!--End off About section -->
 
-        <div class="container">
+        <div class="container team">
             <div class="row">
                 <div class="main_featured m-top-100">
                     <div class="col-sm-12">
@@ -257,7 +257,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-12 col-md-4">
+                    <div class="col-sm-12 col-md-4 team-card">
                         <div class="thumbnail">
                             <img src="assets/images/fprojects/team1.jpg" alt="Franco">
                             <div class="caption">
@@ -270,29 +270,30 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-12 col-md-4">
+                    <div class="col-sm-12 col-md-4 team-card">
                         <div class="thumbnail">
                             <img src="assets/images/fprojects/team2.jpg" alt="Blue">
                             <div class="caption">
                                 <h3>魏丽艳（合伙人）</h3>
                                 <h4>Vivian Wei</h4>
-                                <p>5年世界500强外资企业人力资源从业经历及3年互联网猎头公司创业经历</p>
-                                <p>深厚的人脉资源及商务拓展经验,成功拓展过多家知名互联网公司优质客户</p>
-                                <p>擅长互联网&外企总监级别及以上高管职位招聘，3年内带领团队主导完成近百家知名互联网公司高管职位招聘</p>
+                                <p>5年世界500强外资企业人力资源从业经历及3年互联网猎头公司创业经历；</p>
+                                <p>深厚的人脉资源及商务拓展经验,成功拓展过多家知名互联网公司优质客户；</p>
+                                <p>擅长互联网&外企总监级别及以上高管职位招聘，3年内带领团队主导完成近百家知名互联网公司高管职位招聘；</p>
                                 <p>对外经济贸易大学硕士学历。</p>
                             </div>
 
                         </div>
                     </div>
 
-                    <div class="col-sm-12 col-md-4">
+                    <div class="col-sm-12 col-md-4 team-card">
                         <div class="thumbnail">
                             <img src="assets/images/fprojects/team3.jpg" alt="Vivian">
                             <div class="caption">
                                 <h3>蓝罗丹（合伙人）</h3>
                                 <h4>Blue Lan</h4>
                                 <p>4年专注于互联网行业高端技术、产品人才招聘；</p>
-                                <p>年均入职高端人才25+，年均回款百万以上，曾作为交付负责人带领15人以上交付团队为公司盈利负责；</p>
+                                <p>年均入职高端人才25+，年均回款百万以上；</p>
+                                <p>曾作为交付负责人带领15人以上交付团队为公司盈利负责；</p>
                                 <p>拥有东华大学本科、硕士学历。</p>
                             </div>
                         </div>
@@ -625,6 +626,17 @@
     <!-- paradise slider js -->
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        /**
+        $('.team-card').click(function(e){
+            var target = $(e.currentTarget);
+            if(target.hasClass('col-md-3')){
+                $('div.col-sm-12.col-md-6.team-card').addClass('col-md-3').removeClass('col-md-6');
+                target.addClass('col-md-6').removeClass('col-md-3');
+            }
+        });
+        **/
+    </script>
 
 </body>
 
